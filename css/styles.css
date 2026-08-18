@@ -870,35 +870,6 @@ h1 em {
   color: var(--limestone);
 }
 
-/* ---------- Quote ---------- */
-
-.quote__mark {
-  font-family: var(--font-serif);
-  font-size: 5.5rem;
-  line-height: 0.4;
-  color: var(--bronze);
-  margin-bottom: 2.2rem;
-}
-
-.quote__text {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-size: clamp(1.5rem, 3vw, 2.1rem);
-  line-height: 1.5;
-  color: var(--ivory);
-  margin-bottom: 1.8rem;
-}
-
-.quote cite {
-  font-family: var(--font-body);
-  font-style: normal;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--bronze);
-}
-
 /* ---------- About ---------- */
 
 .about__grid {
