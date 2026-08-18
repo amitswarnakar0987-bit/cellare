@@ -759,7 +759,7 @@ h1 em {
 
 .materials__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(1.2rem, 2.5vw, 2rem);
 }
 
@@ -796,6 +796,10 @@ h1 em {
 
 .mat__media--bronze img {
   filter: saturate(0.5) sepia(0.7) hue-rotate(-12deg) brightness(1.06);
+}
+
+.mat__media--glass img {
+  filter: brightness(0.72) saturate(1.12) contrast(1.08);
 }
 
 .mat figcaption {
