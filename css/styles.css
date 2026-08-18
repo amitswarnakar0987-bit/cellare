@@ -533,7 +533,14 @@ h1 em {
 /* ---------- Services ---------- */
 
 .services {
-  background: var(--bg-deep);
+  background-color: var(--bg-deep);
+  background-image:
+    linear-gradient(180deg, rgba(13, 10, 7, 0.86) 0%, rgba(13, 10, 7, 0.74) 50%, rgba(13, 10, 7, 0.88) 100%),
+    url("../assets/img/bg-services.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
 }
 
 .svc {
@@ -709,7 +716,14 @@ h1 em {
 /* ---------- Process ---------- */
 
 .process {
-  background: var(--bg-deep);
+  background-color: var(--bg-deep);
+  background-image:
+    linear-gradient(180deg, rgba(13, 10, 7, 0.86) 0%, rgba(13, 10, 7, 0.74) 50%, rgba(13, 10, 7, 0.88) 100%),
+    url("../assets/img/bg-process.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
 }
 
 .process__list {
@@ -1292,6 +1306,27 @@ h1 em {
     transform: none;
   }
 }
+/* ---------- Section backgrounds ---------- */
+
+.about {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(180deg, rgba(13, 10, 7, 0.86) 0%, rgba(13, 10, 7, 0.74) 50%, rgba(13, 10, 7, 0.88) 100%),
+    url("../assets/img/bg-about.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+}
+
+@media (max-width: 768px) {
+  .services,
+  .process,
+  .about {
+    background-attachment: scroll, scroll;
+  }
+}
+
 /* ---------- Testimonials page ---------- */
 
 .page-hero {
