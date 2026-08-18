@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CELLARÉ — Private Wine Cellar Architecture</title>
+  <meta name="description" content="CELLARÉ designs, engineers and builds private wine cellars, tasting rooms and wine lounges — rooms composed with the discipline of a grand atelier.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0D0A07">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="canonical" href="https://cellare.example/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CELLARÉ">
+  <meta property="og:title" content="CELLARÉ — Private Wine Cellar Architecture">
+  <meta property="og:description" content="Private wine cellars, tasting rooms and wine lounges — composed with the discipline of a grand atelier.">
+  <meta property="og:url" content="https://cellare.example/">
+  <meta property="og:image" content="https://cellare.example/assets/img/hero.webp">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Allura&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CELLARÉ",
+    "description": "Private wine cellar architecture and construction atelier.",
+    "url": "https://cellare.example/",
+    "email": "hello@cellare.example",
+    "telephone": "+1 (000) 000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New York",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <div class="nav__inner">
+        <a class="nav__brand" href="#top" aria-label="CELLARÉ — home">
+          <span class="nav__brand-mark">CELLARÉ</span>
+        </a>
+        <ul class="nav__links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--ghost btn--nav" href="#contact">Private Consultation</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__menu-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#materials">Materials</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--ghost" href="#contact">Private Consultation</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/hero.webp" alt="" width="1920" height="1080" fetchpriority="high">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">Private wine architecture</p>
+        <h1 class="hero__title">Cellars composed as <em>architecture</em>.</h1>
+        <p class="hero__lede">CELLARÉ designs, engineers and builds private wine environments — rooms where collection, climate and light are resolved with the discipline of a grand atelier.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#services">Explore the Craft</a>
+          <a class="btn btn--ghost" href="#contact">Begin Your Cellar</a>
+        </div>
+        <p class="hero__note">Composed for private collectors · By appointment only</p>
+      </div>
+      <a class="hero__scroll" href="#intro" aria-label="Scroll to introduction">
+        <span class="hero__scroll-line"></span>
+      </a>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Climate-controlled</span><i>✦</i>
+        <span>Curated by design</span><i>✦</i>
+        <span>Crafted in wood &amp; stone</span><i>✦</i>
+        <span>Composed for collectors</span><i>✦</i>
+        <span>Climate-controlled</span><i>✦</i>
+        <span>Curated by design</span><i>✦</i>
+        <span>Crafted in wood &amp; stone</span><i>✦</i>
+        <span>Composed for collectors</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="intro section" id="intro">
+      <div class="container container--wide">
+        <div class="intro__grid">
+          <div class="intro__media reveal">
+            <img src="assets/img/intro.webp" alt="A dimly lit private wine cellar with bottles resting in oak racks" width="1800" height="1202" loading="lazy">
+          </div>
+          <div class="intro__body">
+            <p class="eyebrow">Beyond storage</p>
+            <h2 class="h2">We create spaces worthy of what you collect.</h2>
+            <p class="intro__copy">A cellar is not a room for bottles. It is a composition of timber, stone, climate and light — an architecture of patience that holds your collection in the dark, at the right degree, for decades.</p>
+            <p class="intro__copy">From the first drawing to the last brush of finish, CELLARÉ composes every cellar as a room of the house — one you will enter, stand in, and know was made for you.</p>
+            <a class="link-arrow" href="#services">Discover the atelier <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 class="h2">The full discipline, under one roof.</h2>
+          <p class="section-head__sub">Six practices, one atelier — from the first sketch to the final bottle in place.</p>
+        </header>
+
+        <article class="svc reveal">
+          <div class="svc__media">
+            <img src="assets/img/srv-01.webp" alt="A modern residential wine cellar interior with glass front and warm lighting" width="1200" height="900" loading="lazy">
+            <span class="svc__num">01</span>
+          </div>
+          <div class="svc__body">
+            <h3 class="h3">Custom Cellar Design</h3>
+            <p>Architectural drawings, material palettes and lighting studies — composed around your collection, your room and your way of living.</p>
+            <a class="link-arrow" href="#contact">Plan a study <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="svc svc--rev reveal">
+          <div class="svc__media">
+            <img src="assets/img/srv-02.webp" alt="A serene interior with soft daylight in a wine room under construction" width="1200" height="800" loading="lazy">
+            <span class="svc__num">02</span>
+          </div>
+          <div class="svc__body">
+            <h3 class="h3">Climate Engineering</h3>
+            <p>Passive and active systems that hold 55 degrees and 70 percent relative humidity — in silence, invisibly, year after year.</p>
+            <a class="link-arrow" href="#contact">Engineer your room <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media">
+            <img src="assets/img/srv-03.webp" alt="A finished wine room with stone floor and recessed lighting" width="1200" height="800" loading="lazy">
+            <span class="svc__num">03</span>
+          </div>
+          <div class="svc__body">
+            <h3 class="h3">Cellar Construction</h3>
+            <p>Joining, sealing and finishing in the atelier tradition — timber and stone resolved to the millimetre, installed with quiet precision.</p>
+            <a class="link-arrow" href="#contact">Build your cellar <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="svc svc--rev reveal">
+          <div class="svc__media">
+            <img src="assets/img/srv-04.webp" alt="An elegant tasting room with curated shelving and warm accent lighting" width="1200" height="800" loading="lazy">
+            <span class="svc__num">04</span>
+          </div>
+          <div class="svc__body">
+            <h3 class="h3">Tasting &amp; Wine Rooms</h3>
+            <p>Rooms made for the ritual of tasting — light, acoustics, seating and glassware storage resolved as one composition.</p>
+            <a class="link-arrow" href="#contact">Compose a tasting room <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="svc reveal">
+          <div class="svc__media">
+            <img src="assets/img/srv-05.webp" alt="A dark cellar with rows of wine bottles on wooden racking" width="1200" height="800" loading="lazy">
+            <span class="svc__num">05</span>
+          </div>
+          <div class="svc__body">
+            <h3 class="h3">Racking &amp; Storage Systems</h3>
+            <p>Modular racking composed for bottle counts, display and access — every sleeve, shelf and drawer drawn to your collection.</p>
+            <a class="link-arrow" href="#contact">Catalogue your collection <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="svc svc--rev reveal">
+          <div class="svc__media">
+            <img src="assets/img/srv-06.webp" alt="A bright renovated wine cellar with polished racks and floor" width="1200" height="800" loading="lazy">
+            <span class="svc__num">06</span>
+          </div>
+          <div class="svc__body">
+            <h3 class="h3">Renovation &amp; Restoration</h3>
+            <p>Existing cellars returned to form — structure, finish and climate renewed, and the room brought back into the house.</p>
+            <a class="link-arrow" href="#contact">Restore your cellar <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="signature section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">The Signature</p>
+          <h2 class="h2">One room, resolved in four movements.</h2>
+        </header>
+        <div class="signature__grid">
+          <div class="sig reveal">
+            <h3 class="h3">Preservation</h3>
+            <p>Climate, humidity and vibration — engineered with restraint, so the room keeps its promise for decades.</p>
+          </div>
+          <div class="sig reveal">
+            <h3 class="h3">Architecture</h3>
+            <p>Composition, proportion and thresholds — a cellar that reads as a room of the house, not a room for bottles.</p>
+          </div>
+          <div class="sig reveal">
+            <h3 class="h3">Material</h3>
+            <p>Walnut, stone, bronze and leather — selected to the exact tone, finished by hand, aged with grace.</p>
+          </div>
+          <div class="sig reveal">
+            <h3 class="h3">Experience</h3>
+            <p>Light, sound and ceremony — how the room feels at six in the evening, and how it feels ten years on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio">
+      <div class="container container--wide">
+        <header class="section-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="h2">Recent compositions.</h2>
+        </header>
+        <div class="portfolio__grid">
+          <figure class="prj prj--tall reveal">
+            <div class="prj__media">
+              <img src="assets/img/prj-01.webp" alt="A private tasting bar finished in dark wood with bronze detail" width="1200" height="800" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="prj__num">01</span>
+              <h3 class="h3">The Oak Bar</h3>
+              <p>Private residence — tasting bar in walnut and bronze.</p>
+            </figcaption>
+          </figure>
+          <figure class="prj reveal">
+            <div class="prj__media">
+              <img src="assets/img/prj-02.webp" alt="A glass of wine held toward a warm sunset in a study room" width="1200" height="1667" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="prj__num">02</span>
+              <h3 class="h3">The Sunset Room</h3>
+              <p>Collector&rsquo;s study — glass and amber light.</p>
+            </figcaption>
+          </figure>
+          <figure class="prj reveal">
+            <div class="prj__media">
+              <img src="assets/img/prj-03.webp" alt="Oak barrels ageing in a vaulted cellar space" width="1200" height="1600" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="prj__num">03</span>
+              <h3 class="h3">The Barrel Hall</h3>
+              <p>Private estate — barrel ageing room in oak.</p>
+            </figcaption>
+          </figure>
+          <figure class="prj reveal">
+            <div class="prj__media">
+              <img src="assets/img/prj-04.webp" alt="A deep cellar corridor lined with black racking and bottles" width="1200" height="800" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="prj__num">04</span>
+              <h3 class="h3">The Reserve</h3>
+              <p>City apartment — black oak racking, sixty square feet.</p>
+            </figcaption>
+          </figure>
+          <figure class="prj prj--tall reveal">
+            <div class="prj__media">
+              <img src="assets/img/prj-05.webp" alt="A penthouse wine room in travertine and smoked glass" width="1200" height="1800" loading="lazy">
+            </div>
+            <figcaption>
+              <span class="prj__num">05</span>
+              <h3 class="h3">The Penthouse Cellar</h3>
+              <p>Penthouse — travertine, smoked glass, recessed light.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature section">
+      <div class="container container--wide">
+        <div class="feature__grid">
+          <div class="feature__media reveal">
+            <img src="assets/img/feature.webp" alt="Candlelit barrels and shelves in a signature cellar project" width="1800" height="1154" loading="lazy">
+          </div>
+          <div class="feature__body">
+            <p class="eyebrow">Signature project</p>
+            <h2 class="h2">A cellar that behaves like a room of the house.</h2>
+            <p class="feature__copy">The signature CELLARÉ room begins with the collection and ends with a threshold you cross gladly. Between them — climate that holds the bottle, timber that holds the eye, and light that arrives as if it had always belonged.</p>
+            <ul class="feature__list">
+              <li><span>Collection</span> — capacity and display drawn from your inventory</li>
+              <li><span>Climate</span> — passive mass and silent systems, invisibly resolved</li>
+              <li><span>Material</span> — walnut, stone and bronze, finished by hand</li>
+            </ul>
+            <a class="btn btn--primary" href="#contact">Discuss your project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="process">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Process</p>
+          <h2 class="h2">Six movements, from first word to final bottle.</h2>
+        </header>
+        <ol class="process__list">
+          <li class="proc reveal">
+            <span class="proc__num">01</span>
+            <div class="proc__body">
+              <h3 class="h3">Private Consultation</h3>
+              <p>We listen — collection, habits, and the room it will become.</p>
+            </div>
+          </li>
+          <li class="proc reveal">
+            <span class="proc__num">02</span>
+            <div class="proc__body">
+              <h3 class="h3">Site &amp; Climate Study</h3>
+              <p>Light, thermal mass and orientation — surveyed and modelled.</p>
+            </div>
+          </li>
+          <li class="proc reveal">
+            <span class="proc__num">03</span>
+            <div class="proc__body">
+              <h3 class="h3">Architecture &amp; Design</h3>
+              <p>Drawings, materials and light, resolved to the last detail.</p>
+            </div>
+          </li>
+          <li class="proc reveal">
+            <span class="proc__num">04</span>
+            <div class="proc__body">
+              <h3 class="h3">Material Curation</h3>
+              <p>Timber, stone and bronze selected to the exact tone.</p>
+            </div>
+          </li>
+          <li class="proc reveal">
+            <span class="proc__num">05</span>
+            <div class="proc__body">
+              <h3 class="h3">Craft &amp; Construction</h3>
+              <p>Built in atelier tradition — on site and in the workshop.</p>
+            </div>
+          </li>
+          <li class="proc reveal">
+            <span class="proc__num">06</span>
+            <div class="proc__body">
+              <h3 class="h3">Handover &amp; Concierge</h3>
+              <p>Commissioning, service and lifelong maintenance.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="materials section" id="materials">
+      <div class="container container--wide">
+        <header class="section-head reveal">
+          <p class="eyebrow">Materials</p>
+          <h2 class="h2">The atelier&rsquo;s palette.</h2>
+        </header>
+        <div class="materials__grid">
+          <figure class="mat reveal">
+            <div class="mat__media">
+              <img src="assets/img/mat-walnut.webp" alt="Smoked American walnut with deep grain" width="900" height="750" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">American Walnut</h3>
+              <p>Deep grain, smoked finish.</p>
+            </figcaption>
+          </figure>
+          <figure class="mat reveal">
+            <div class="mat__media">
+              <img src="assets/img/mat-limestone.webp" alt="Honed limestone surface in warm neutral tones" width="900" height="1350" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">Honed Limestone</h3>
+              <p>Quiet, tactile, timeless.</p>
+            </figcaption>
+          </figure>
+          <figure class="mat reveal">
+            <div class="mat__media">
+              <img src="assets/img/mat-travertine.webp" alt="Roman travertine with its classic porous vein" width="900" height="1350" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">Roman Travertine</h3>
+              <p>Porous warmth, classic vein.</p>
+            </figcaption>
+          </figure>
+          <figure class="mat reveal">
+            <div class="mat__media">
+              <img src="assets/img/mat-glass.webp" alt="Smoked glass with a quiet reflective depth" width="900" height="600" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">Smoked Glass</h3>
+              <p>Reflection and depth.</p>
+            </figcaption>
+          </figure>
+          <figure class="mat reveal">
+            <div class="mat__media mat__media--bronze">
+              <img src="assets/img/mat-bronze.webp" alt="Patinated bronze with a brushed warm surface" width="900" height="596" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">Patinated Bronze</h3>
+              <p>Hand-finished, ages well.</p>
+            </figcaption>
+          </figure>
+          <figure class="mat reveal">
+            <div class="mat__media">
+              <img src="assets/img/mat-marble.webp" alt="Nero Marquina marble, black stone with white veining" width="900" height="600" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">Nero Marquina Marble</h3>
+              <p>Blackest stone, white vein.</p>
+            </figcaption>
+          </figure>
+          <figure class="mat reveal">
+            <div class="mat__media">
+              <img src="assets/img/mat-leather.webp" alt="Cognac leather with a fine, supple surface" width="900" height="600" loading="lazy">
+            </div>
+            <figcaption>
+              <h3 class="h3">Cognac Leather</h3>
+              <p>Tannery-grade, wrapped detail.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers section">
+      <div class="container">
+        <!-- EDIT: replace the four figures below with verified numbers -->
+        <div class="numbers__grid">
+          <div class="num reveal">
+            <span class="num__value" data-count="20">0</span><span class="num__suffix">+</span>
+            <p>Years of practice</p>
+          </div>
+          <div class="num reveal">
+            <span class="num__value" data-count="500">0</span><span class="num__suffix">+</span>
+            <p>Cellars composed</p>
+          </div>
+          <div class="num reveal">
+            <span class="num__value" data-count="98">0</span><span class="num__suffix">%</span>
+            <p>Clients who return</p>
+          </div>
+          <div class="num reveal">
+            <span class="num__value" data-count="25">0</span><span class="num__suffix">yr</span>
+            <p>Craftsmanship warranty</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote section">
+      <div class="container container--narrow">
+        <blockquote class="reveal">
+          <p class="quote__mark" aria-hidden="true">&ldquo;</p>
+          <p class="quote__text">They composed our cellar as a room of the house, not a room for bottles. The light, the wood, the quiet — everything is exactly where it should be.</p>
+          <!-- EDIT: replace with the client's name -->
+          <cite>Private client · Private residence</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container container--wide">
+        <div class="about__grid">
+          <div class="about__body">
+            <p class="eyebrow">The Atelier</p>
+            <h2 class="h2">An atelier devoted to the discipline of cellaring.</h2>
+            <p class="about__copy">CELLARÉ is a design and construction atelier working exclusively on private wine environments — cellars, tasting rooms and wine lounges for collectors who treat their collection as a part of the house.</p>
+            <p class="about__copy">Each commission is led by a single studio, from survey to handover: the same hands that draw the room build it, and the same team returns to care for it.</p>
+            <p class="about__sign">Cellar carefully.</p>
+            <a class="link-arrow" href="#contact">Meet the atelier <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about__media reveal">
+            <img src="assets/img/about.webp" alt="A moody pour of wine in a private study at dusk" width="1200" height="1680" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact__media" aria-hidden="true">
+        <img src="assets/img/cta.webp" alt="" width="1800" height="1200" loading="lazy">
+      </div>
+      <div class="contact__shade" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__intro">
+            <p class="eyebrow">Private consultation</p>
+            <h2 class="h2">Begin your private cellar.</h2>
+            <p class="contact__copy">Share a few words about your collection and the room you imagine. A senior member of the atelier will reply within two working days.</p>
+            <ul class="contact__meta">
+              <li>hello@cellare.example</li>
+              <li>+1 (000) 000-0000</li>
+              <li>New York · By appointment</li>
+            </ul>
+          </div>
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__field">
+              <label for="f-name">Full name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required>
+              <p class="form__error" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required>
+              <p class="form__error" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="f-phone">Phone <span class="form__opt">(optional)</span></label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel">
+              <p class="form__error" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="f-type">Project type</label>
+              <select id="f-type" name="projectType" required>
+                <option value="" selected disabled>Select a project type</option>
+                <option>Full Turnkey Cellar</option>
+                <option>Cellar Renovation &amp; Restoration</option>
+                <option>Tasting &amp; Wine Room</option>
+                <option>Home Bar &amp; Wine Lounge</option>
+                <option>Design Consultation</option>
+              </select>
+              <p class="form__error" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="f-message">Your collection &amp; room</label>
+              <textarea id="f-message" name="message" rows="4" required placeholder="Approximate bottle count, location, and the feeling you want the room to have."></textarea>
+              <p class="form__error" hidden></p>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Request Consultation</button>
+          </form>
+          <p class="form__success" hidden>Thank you — your request has been received. The atelier will be in touch.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="footer__mark">CELLARÉ</span>
+          <p>Private wine architecture — cellars, tasting rooms and wine lounges, composed for collectors.</p>
+        </div>
+        <nav class="footer__col" aria-label="Footer — explore">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#materials">Materials</a></li>
+            <li><a href="#process">Process</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Footer — atelier">
+          <h4>Atelier</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Private Consultation</a></li>
+          </ul>
+        </nav>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li>hello@cellare.example</li>
+            <li>+1 (000) 000-0000</li>
+            <li>By appointment only</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> CELLARÉ — Private wine architecture. All rights reserved.</p>
+        <p>Composed with care, in the dark.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
